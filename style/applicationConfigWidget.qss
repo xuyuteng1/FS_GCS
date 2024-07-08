@@ -1,0 +1,154 @@
+﻿QGroupBox#ConfigureWidgetGroupBox{
+    background-color:rgba(22,25,41,0.8);
+    border-top : 2px solid #C0C0C0;
+    padding-top:-20px;
+    padding-bottom:-20px;
+}
+
+QGroupBox#ConfigureWidgetGroupBox::title
+{
+    color:#DDDDDD;
+    font: 400 10pt "Microsoft YaHei";
+    color:#7CFC00;
+}
+
+QListView#ConfigureWidgetListView{
+    background-color:rgba(22,25,41,0.6);
+    border:0px solid #FFFFFF;
+    font: 12pt;
+}
+
+
+QListView#ConfigureWidgetListView::item{
+    min-height:48px;
+    border:none;
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(20,20,20,0.7),stop:0.3 rgba(20,20,20,0.8),stop:0.7 rgba(20,20,20,0.8),stop:1 rgba(20,20,20,0.7));
+    background-color:rgba(22,25,41,0.7);
+    color:#E0FFFF;
+    text-align:center;
+}
+
+QListView#ConfigureWidgetListView::item:hover{
+    min-height:48px;
+    border:none;
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(20,20,20,0.7),stop:0.3 rgba(20,20,20,0.8),stop:0.7 rgba(20,20,20,0.8),stop:1 rgba(20,20,20,0.7));
+    background-color:rgba(22,25,41,0.8);
+    color:#7FFFD4;
+}
+
+QListView#ConfigureWidgetListView::item:selected{
+    min-height:48px;
+    border:none;
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(20,20,20,0.7),stop:0.3 rgba(20,20,20,0.8),stop:0.7 rgba(20,20,20,0.8),stop:1 rgba(20,20,20,0.7));
+    background-color:rgba(22,25,41,1.0);
+    color:#7CFC00;
+}
+
+QLabel#ConfigureWidgetLabel{
+    color:#E0FFFF;
+    font: 400 10pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,0);
+    padding-top:2px;
+    padding-bottom:2px;
+    margin-top:5px;
+    margin-bottom:5px;
+    min-height:25px;
+}
+
+QLabel#ConfigureWidgetSubLabel{
+    color:#E0FFFF;
+    font: 400 9pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,0);
+    min-height:25px;
+}
+
+QSplitter#ConfigureWidgetSplitter {
+    background-color:rgba(22,25,41,0.6);
+    border:0px solid #FFFFFF;
+    margin:0px;
+}
+
+QSplitter#ConfigureWidgetSplitter::handle {
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(61,61,61,255),stop:0.1 rgba(61,61,61,255),stop:0.2 rgba(22,25,41,255));
+}
+
+QSplitter#ConfigureWidgetSplitter::handle:pressed {
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(122,122,122,255),stop:0.5 rgba(122,122,122,255),stop:1 rgba(22,25,41,255));
+}
+
+
+
+
+QCheckBox#ConfigureWidgetCheckBox {
+    color: #E0FFFF;
+    font: 400 9pt "Microsoft YaHei";
+}
+
+QCheckBox#ConfigureWidgetCheckBox::hover {
+    color: #A9A9A9;
+    font: 400 9pt "Microsoft YaHei";
+}
+
+QLineEdit#ConfigureWidgetEdit,QComboBox#ConfigureWidgetComboBox,QSpinBox#ConfigureWidgetSpinBox{
+    color: #E0FFFF;
+    font: 400 9pt "Microsoft YaHei";
+    background-color:#708090;
+    border:1px solid #696969;
+    border-radius:4px;
+    padding-left:1px;
+    min-height:25px;
+}
+
+QLineEdit#ConfigureWidgetEdit::hover,QComboBox#ConfigureWidgetComboBox::hover,QSpinBox#ConfigureWidgetSpinBox::hover{
+    color: #E0FFFF;
+    font: 400 9pt "Microsoft YaHei";
+    background-color:#A9A9A9;
+    border:1px solid #F0FFF0;
+}
+
+QLineEdit#ConfigureWidgetEdit:selected,QComboBox#ConfigureWidgetComboBox:selected,QSpinBox#ConfigureWidgetSpinBox:selected{
+    color: #FFFAFA;
+    font: 400 9pt "Microsoft YaHei";
+    background-color:#4169E1;
+    border:1px solid #F0FFF0;
+}
+
+QSlider#ConfigureWidgetSlider::groove:horizontal{
+        height: 4px;
+        left: 0px;
+        right: 0px;
+        border:0px;
+        border-radius:2px;
+        background:rgba(0,0,0,50);
+ }
+
+QSlider#ConfigureWidgetSlider::groove:horizontal:hover{
+        height: 8px;
+        left: 0px;
+        right: 0px;
+        border:0px;
+        border-radius:4px;
+        background:rgba(0,0,0,50);
+ }
+
+QSlider#ConfigureWidgetSlider::handle:horizontal{
+        width:  16px;
+        height: 16px;
+        border-radius:8px;
+        margin-top: -6px;
+        margin-left: 0px;
+        margin-bottom: -6px;
+        margin-right: 0px;
+        background-color: #4169E1;
+}
+
+
+
+QSlider#ConfigureWidgetSlider::sub-page:horizontal{
+       background:rgba(80,166,234,1);
+}
+
+QPushButton#ConfigureWidgetButton{
+
+
+}

@@ -1,0 +1,11 @@
+﻿QWidget#VideoWidget{
+    background-color:rgba(20,20,20,0);
+    border:none;
+
+}
+
+QLabel#videoLabel{
+    font: 24pt;
+    color:#FF0000;
+    background-color:rgba(20,20,20,1);
+}

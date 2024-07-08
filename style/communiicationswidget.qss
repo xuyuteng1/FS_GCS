@@ -1,0 +1,248 @@
+﻿
+/*=========================== WidgetTitle ============================*/
+QWidget#widgetitle{
+    background-color:rgba(6,7,19,255);
+}
+
+QLabel#widgetitle{
+    color:#FFFFff;
+    font: 400 10pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,10);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+QPushButton#widgetitle{
+    background-color:rgba(0,0,0,0);
+}
+
+QPushButton#widgetitle:hover{
+    background-color:rgba(239, 87, 103,255);
+}
+
+QPushButton#widgetitle:pressed{
+    background-color:rgba(239, 87, 103,200);
+}
+
+
+
+/*=========================== Tab ============================*/
+QTabBar::tab{
+    color:#FFFFFF;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,0.2);
+
+    width:90px;
+    height:35;
+    margin-top:3px;
+    margin-right:3px;
+    margin-left:3px;
+    margin-bottom:3px;
+}
+QTabBar::tab:hover{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,200);
+    /* background-color:rgba(14, 174, 105,255);*/
+}
+
+QTabBar::tab:pressed{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,120);
+}
+
+QTabBar::tab:selected{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,255);
+}
+
+QLabel#photoelectricConfigLabel{
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,10);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+/*=========================== 按键 ============================*/
+QPushButton#Basic_Button{
+    color:#FFFFff;
+    font: 400 8pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,0.4);
+}
+
+QPushButton#Basic_Button:hover{
+    color:#FFFFff;
+    font: 400 8pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,255);
+    /* background-color:rgba(14, 174, 105,255);*/
+}
+
+QPushButton#Basic_Button:pressed{
+    color:#FFFFff;
+    font: 400 8pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,120);
+}
+
+QPushButton#Basic_Button:checked{
+    color:#FFFFff;
+    font: 400 8pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,255);
+}
+
+/*=========================== QGroupBox ============================*/
+QGroupBox{
+    background-color:rgba(22,25,41,255);
+    border: 0px solid white;
+    font: 400 9pt "Microsoft YaHei";
+}
+
+QGroupBox::title
+{
+    color:#DDDDDD;
+    font: 400 10pt "Microsoft YaHei";
+}
+/*=========================== 下拉框样式 ============================*/
+QComboBox{
+    border: 1px solid gray;   /* 边框 */
+    border-radius: 1px;   /* 圆角 */
+    padding: 1px 3px 1px 3px;   /* 字体填衬 */
+    color:#FFFFff;
+    font: 400 8pt "Microsoft YaHei";
+    background: rgba(22, 119, 255,255);
+}
+
+QComboBox QAbstractItemView {
+    outline: 1px solid gray;   /* 选定项的虚框 */
+    color:#FFFFff;
+    font: 400 8pt "Microsoft YaHei";
+    background: rgba(22,25,41,255);/* 整个下拉窗体的背景色 */
+    selection-background-color: rgba(22, 119, 255,255);   /* 整个下拉窗体被选中项的背景色 */
+    selection-color:#0F0
+}
+
+QComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度（设置pComboBox->setView(new QListView());后，该项才起作用） */
+}
+
+QComboBox QAbstractItemView::item:hover {
+    color: #FFFFFF;
+    background-color: rgba(22, 119, 255,255);   /* 整个下拉窗体越过每项的背景色 */
+}
+/*=========================== 表格样式 ============================*/
+/*QTableView 左上角样式*/
+QTableView QTableCornerButton::section {
+    color: red;
+    background-color: rgba(22, 119, 255,0.3);
+    alternate-background-color: rgba(22, 119, 255,120);
+    selection-background-color: rgba(22, 119, 255,255);
+    border: 0px solid #f6f7fa;
+    border-radius:0px;
+    border-color: rgb(64, 64, 64);
+ }
+ QTableView{
+     color:#FFFFff;
+     font: 400 8.5pt "Microsoft YaHei";
+     background-color:rgba(22,25,41,255);
+     gridline-color: black;
+     selection-color: white;
+     alternate-background-color: rgba(22, 119, 255,0.25);
+     selection-background-color: rgba(22, 119, 255,0.4);
+     border: 1px solid rgba(255,255,255,100);
+     border-radius: 0px;
+     padding: 1px 1px;
+ }
+QHeaderView {
+    color:#FFFFff;
+    font: 600 9pt "Microsoft YaHei";
+
+    background-color:black;
+    border:1px solid rgba(100,100,100,120);
+    border-left-color: rgba(100,100,100,120);
+    border-top-color: rgba(100,100,100,120);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color:#FFFFff;
+    font: 600 9pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,200);
+    alternate-background-color: rgba(22, 119, 255,120);
+    selection-background-color: rgba(22, 119, 255,255);
+
+    border: 0px solid rgba(100,100,100,120);
+    border-radius:0px;
+    border-color:rgba(100,100,100,120);
+}
+
+/*=========================== 表格样式 ============================*/
+QLineEdit#Basic_LineEdit{
+    border: 1px solid gray;   /* 边框 */
+    border-radius: 3px;   /* 圆角 */
+    padding: 3px 10px 3px 5px;   /* 字体填衬 */
+    color: #FFFFFF;
+    font: 400 8pt "Microsoft YaHei";
+    background: transparent;
+}
+/*=========================== 滚轮样式 ============================*/
+QScrollArea{
+    border: 0px solid;
+    border-right-width: 1px;
+    border-right-color: #dcdbdc;
+    background-color: rgb(68,68,68);
+}
+QScrollBar:vertical {
+    border: none;
+    background-color: rgb(68,68,68);
+    width: 8px;
+    margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+    background-color: rgba(14, 174, 105,255);
+    min-height: 20px;
+    border-radius: 2px;
+    border: none;
+}
+QScrollBar::add-line:vertical {
+    border: 0px solid grey;
+    background: #32CC99;
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    border: 0px solid grey;
+    background: #32CC99;
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+
+
+/*=========================== 窗体背景色 ============================*/
+QWidget#CommunicationsWidget{
+    background-color:rgba(22,25,41,255);
+    border: 0px solid gray;   /* 边框 */
+}
+/*=========================== TABWIDGET ============================*/
+QTabWidget{
+    background-color:rgba(22,25,41,255);
+    border: 0px solid white;
+    font: 400 9pt "Microsoft YaHei";
+}
+QTabWidget::pane{
+    background-color:rgba(22,25,41,255);
+    border: 0px solid white;
+    font: 400 9pt "Microsoft YaHei";
+}
+

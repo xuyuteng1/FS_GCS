@@ -1,0 +1,111 @@
+﻿QListWidget#SystemInfoWidget{
+    background-color:rgba(255,255,255,0);
+    border:0px solid rgb(55,55,55);
+}
+
+
+QGroupBox#SystemInfoWidgetGroupBox{
+    background-color:rgba(22,25,41,220);
+    /*background:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(60,60,60,160),stop:1 rgba(0,0,0,160));
+    */
+    margin: 1px;
+    padding:0px;
+
+    border-radius:8px;
+    /*border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(22,199,255,255),stop:0.5 rgba(22,199,255,255),stop:1 rgba(22,199,255,255));
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(15,185,112,255),stop:0.5 rgba(15,185,112,255),stop:1 rgba(15,185,112,255));
+    border-left:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(255,120,120,0.9),stop:0.5 rgba(255,140,140,0.9),stop:1 rgba(255,120,120,0));
+    border-right:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(255,120,120,0.9),stop:0.5 rgba(255,140,140,0.9),stop:1 rgba(255,120,120,0));
+    */
+}
+
+QGroupBox#SystemInfoWidgetGroupBox::title
+{
+    subcontrol-origin:margin;
+    subcontrol-position:top left;
+    padding-left:10px;
+    padding-bottom:5px;
+    color:#DDDDDD;
+    font-family:Microsoft YaHei UI;
+    font: 10pt;
+}
+
+
+
+
+QLabel#SystemInfoWidgetLabel{
+    color:#FFFFFF;
+    font: 400 11pt "Microsoft YaHei UI";
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+}
+
+QLabel#SideBarSensorInfoLabel{
+    color:#FFFFFF;
+    font: 400 8pt"Microsoft YaHei UI";
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+QLabel#SideBarPMInfoLabel{
+    color:#FFFFFF;
+    font: 400 11pt "Microsoft YaHei UI";
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+.LedLabel[status="0"]{
+    border-image:url(:/img/status/status_gray.png) 0 0 0 0 strech strech;
+}
+
+.LedLabel[status="1"]{
+    border-image:url(:/img/status/status_green.png);
+}
+
+.LedLabel[status="2"]{
+    border-image:url(:/img/status/status_red.png);
+}
+
+QGroupBox#AircraftInfoGroupLabel,QGroupBox#AirMode,QGroupBox#LockStatus,QGroupBox#PowerDesignerLabel,QGroupBox#powerStatus,QGroupBox#motorOutStatus{
+    background-color:rgba(20,20,20,10);
+    margin: 0px;
+    padding:0px;
+    border:0px solid rgb(55,55,55);
+}
+
+
+
+/*=========================== QMenu ============================*/
+QMenu#SystemInfoWidgetMenu{
+    background-color: rgba(22, 119,255,0.05);
+    font: 450 9pt "Microsoft YaHei";
+    color:rgb(225,225,225);
+    border-radius:2px;
+    width:160px;
+}
+
+QMenu#SystemInfoWidgetMenu::item{
+    width:120;height:30px;
+    background-color: rgba(22, 119,255,0.2);
+    border:1px solid rgb(55,55,55);
+    font: 400 8.5pt "Microsoft YaHei";
+    border-radius:1px;
+    padding: 0px 0px 0px 30px;
+    margin:1px 1px 1px 1px;
+}
+
+QMenu#SystemInfoWidgetMenu::item:selected{
+    background-color: rgba(22, 119,255,255);
+}
+
+QMenu#SystemInfoWidgetMenu::item:hover{
+    background-color:rgba(22, 119,255,200);
+}
+
+QMenu#SystemInfoWidgetMenu::item:pressed{
+    background-color:rgba(22, 119,255,220);
+}
+
+

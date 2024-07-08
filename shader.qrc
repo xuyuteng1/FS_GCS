@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>hudview/shader/hudFragment.frag</file>
+        <file>hudview/shader/hudVertex.vert</file>
+    </qresource>
+</RCC>

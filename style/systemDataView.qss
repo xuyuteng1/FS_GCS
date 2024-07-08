@@ -1,0 +1,132 @@
+﻿QWidget#DataView{
+    background-color:rgba(6,7,19,255);
+}
+
+
+QLabel#DataItemViewName{
+    color:#FFFF00;
+    font: 400 8.5pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,10);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+QLabel#DataItemViewValue{
+    color:#FFFFff;
+    font: 400 8.5pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,10);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+QGroupBox#DataItemView{
+    background-color:rgba(22,25,41,10);
+    border:0px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,1),stop:0.5 rgba(200,200,200,1),stop:1 rgba(200,200,200,1));
+}
+
+QGroupBox#systemStatusWidget,QGroupBox#airPlaneInfoWidget,QGroupBox#escInfoWidget,QGroupBox#satelliteInfoWidget,QGroupBox#IMUStatusWidget,QGroupBox#magneticCompassStatusWidget,QGroupBox#barometerStatusWidget,QGroupBox#rcAndMotorStatusWidget,QGroupBox#targetInfoWidget{
+    background-color:rgba(22,25,41,255);
+    border:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(100,100,100,1),stop:0.5 rgba(100,100,100,1),stop:1 rgba(100,100,100,1));
+    border-radius:5px;
+    font: 800 9pt "Microsoft YaHei";
+    margin-left: 0;
+    margin-top: 10;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+QGroupBox::title
+{
+    subcontrol-origin:margin;
+    subcontrol-position:top left;
+    padding-left:10px;
+    padding-bottom:5px;
+    color:#DDDDDD;
+    font: 400 10pt "Microsoft YaHei";
+}
+
+QGroupBox#DataView
+{
+    background-color:rgba(22,25,41,255);
+    border: 3px solid white;
+    border-radius:10px;
+    margin-top:1ex;
+    font: 800 9pt "Microsoft YaHei";
+}
+
+QGroupBox::title
+{
+        subcontrol-origin:margin;
+        subcontrol-position:top center;
+        padding:1px;
+}
+QGroupBox::enabled{
+        border: 2px solid white;
+}
+QGroupBox::!enabled {
+        border: 1px solid white;
+}
+
+
+/*=========================== WidgetTitle ============================*/
+QWidget#widgetitle{
+    background-color:rgba(6,7,19,255);
+}
+
+QLabel#widgetitle{
+    color:#FFFFff;
+    font: 400 10pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,10);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+QPushButton#widgetitle{
+    background-color:rgba(0,0,0,0);
+}
+
+QPushButton#widgetitle:hover{
+    background-color:rgba(239, 87, 103,255);
+}
+
+QPushButton#widgetitle:pressed{
+    background-color:rgba(239, 87, 103,200);
+}
+
+QComboBox#escSelect
+{
+    color:#FFFF00;
+    font: 400 8pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,10);
+}
+
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox QAbstractItemView {
+    outline: 0px solid gray;   /* 选定项的虚框 */
+    border: 1px solid yellow;   /* 整个下拉窗体的边框 */
+    color: green;
+    background-color: red;   /* 整个下拉窗体的背景色 */
+    selection-background-color: lightgreen;   /* 整个下拉窗体被选中项的背景色 */
+    padding-left:3px;/*边距（还有其他方向边距设置方式）*/
+}
+
+/* 下拉后，整个下拉窗体每项的样式 */
+QComboBox QAbstractItemView::item {
+    height: 50px;   /* 项的高度（设置pComboBox->setView(new QListView());后，该项才起作用） */
+    padding-left:3px;/*边距（还有其他方向边距设置方式）*/
+}
+
+/* 下拉后，整个下拉窗体越过每项的样式 */
+QComboBox QAbstractItemView::item:hover {
+    color: #FFFFFF;
+    background-color: lightgreen;   /* 整个下拉窗体越过每项的背景色 */
+}
+
+/* 下拉后，整个下拉窗体被选择的每项的样式 */
+QComboBox QAbstractItemView::item:selected {
+    color: #FFFFFF;
+    background-color: lightgreen;
+}
+
+

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style/communiicationswidget.qss</file>
+        <file>style/systemDataView.qss</file>
+        <file>style/widgetStyle.qss</file>
+    </qresource>
+</RCC>

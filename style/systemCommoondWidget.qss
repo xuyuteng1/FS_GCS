@@ -1,0 +1,187 @@
+﻿/******************************SystemCommondWidget*************************************/
+
+QWidget#SystemMenuWidget{
+    background-color:rgba(255,38,38,0);
+}
+
+QWidget#SystemCommondWidget{
+    border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(120,120,120,0),stop:0.5 rgba(140,140,140,0.7),stop:1 rgba(120,120,120,0));
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(120,120,120,0),stop:0.5 rgba(140,140,140,0.7),stop:1 rgba(120,120,120,0));
+    border-left:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(120,120,120,0.6),stop:0.5 rgba(140,140,140,0.7),stop:1 rgba(120,120,120,0));
+    border-right:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(120,120,120,0.6),stop:0.5 rgba(140,140,140,0.7),stop:1 rgba(120,120,120,0));
+    background-color:rgba(38,38,38,0.9);
+}
+
+
+QToolButton#motorUnlockButton,QToolButton#takeoffButton,QToolButton#touckDownButton,QToolButton#waypointButton,QToolButton#routesButton,QToolButton#modelButton,QToolButton#flameoutButton{
+    border-top:15px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,1),stop:0.5 rgba(200,200,200,1),stop:1 rgba(200,200,200,1));
+    border-bottom:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-left:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-right:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+
+
+    background-color:rgba(60,60,60,200);
+    height:95;
+    width:80;
+
+    background-origin: content;
+    background-position: top;
+    padding-top: 0px;
+    background-repeat: no-repeat;
+
+    text-align: bottom;
+    padding-bottom:0px;
+
+    border-radius: 0px;
+    font: 11pt;
+    font-family:SimHei;
+    color:#FFFFFF;
+}
+
+QToolButton#motorUnlockButton::hover,QToolButton#takeoffButton::hover,QToolButton#touckDownButton::hover,QToolButton#waypointButton::hover,QToolButton#routesButton::hover,QToolButton#modelButton::hover{
+    background-color:rgba(60,60,60,255);
+    border-top:16px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(150,255,150,1),stop:0.5 rgba(150,255,150,1),stop:1 rgba(150,255,150,1));
+    padding-top: 1px;
+    font: 12pt;
+    color:#96FF96;
+}
+QToolButton#flameoutButton::hover{
+    background-color:rgba(60,60,60,255);
+    border-top:16px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(255,150,150,1),stop:0.5 rgba(255,150,150,1),stop:1 rgba(255,150,150,1));
+    padding-top: 1px;
+    font: 14pt;
+    color:#FF9696;
+}
+
+
+QToolButton#motorUnlockButton::pressed,QToolButton#takeoffButton::pressed,QToolButton#touckDownButton::pressed,QToolButton#waypointButton::pressed,QToolButton#routesButton::pressed,QToolButton#modelButton::pressed{
+    background-color:rgba(40,40,40,255);
+    border-top:16px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(10,255,10,1),stop:0.5 rgba(10,255,10,1),stop:1 rgba(10,255,10,1));
+    padding-top: 1px;
+    font: 12pt;
+    color:#0AFF0A;
+}
+
+QToolButton#flameoutButton::pressed{
+    background-color:rgba(40,40,40,255);
+    border-top:21px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(255,10,10,1),stop:0.5 rgba(255,10,10,1),stop:1 rgba(255,10,10,1));
+    padding-top: 1px;
+    font: 12pt;
+    color:#FF0A0A;
+}
+
+/************************************************************************************/
+
+
+
+
+
+
+
+
+
+QMenu#motorUnlockMenu,QMenu#modelMenu,QMenu#touchDownMenu{
+    background-color: rgba(80,80,80,255);
+    font: 75 11pt "Microsoft YaHei";
+    color:rgb(200,200,200);
+    border-radius:2px;
+    width:110px;
+}
+
+QMenu#motorUnlockMenu::item,QMenu#modelMenu::item,QMenu#touchDownMenu::item{
+    width:100;height:30px;
+    background-color:rgb(80,80,80);
+    border:1px solid rgb(55,55,55);
+    border-radius:1px;
+    padding: 0px 0px 0px 20px;
+    margin:1px 1px 1px 1px;
+}
+QMenu#motorUnlockMenu::item:selected,QMenu#modelMenu::item:selected,QMenu#touchDownMenu::item:selected{
+    background-color:rgb(40,40,40);
+}
+
+
+QMenu#routesMenu,QMenu#waypointMenu,QMenu#takeoffMenu{
+    background-color: rgba(80,80,80,255);
+    font: 75 11pt "Microsoft YaHei";
+    color:rgb(200,200,200);
+    border-radius:2px;
+}
+
+QSpinBox#WidgetActionSpinBox,QDoubleSpinBox#WidgetActionDoubleSpinBox{
+    width:100;
+    height:30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 1px solid rgb(64,64,64);
+    border-radius: 3px;
+    color: rgb(200,200,200);
+    background-color: rgb(44,44,44);
+    selection-color: rgb(235,235,235);
+    selection-background-color: rgb(83,121,180);
+    font-family: "Microsoft Yahei";
+    font-size: 10pt;
+}
+
+QSpinBox#WidgetActionSpinBox:hover ,QDoubleSpinBox#WidgetActionDoubleSpinBox:hover{
+    background-color: rgb(59,59,59);
+}
+
+
+QPushButton#WidgetActionButton{
+    font: 75 11pt "Microsoft YaHei";
+    color:rgb(240,240,240);
+    border-radius:2px;
+    width:100;
+    height:30px;
+    background-color:rgb(60,60,60);
+    border:1px solid rgb(55,55,55);
+    border-radius:1px;
+    padding: 0px 0px 0px 0px;
+    margin:1px 1px 1px 1px;
+}
+
+QPushButton#WidgetActionButton:selected{
+    background-color:rgb(40,40,40);
+}
+
+QPushButton#WidgetActionButton:hover{
+    background-color:rgb(40,75,75);
+}
+QPushButton#WidgetActionButton:pressed{
+    background-color:rgb(95,75,75);
+}
+
+QLabel#WidgetActionLabel{
+    width:100;
+    height:30px;
+    font: 75 11pt "Microsoft YaHei";
+    color:rgb(240,240,240);
+}
+
+
+QGroupBox#WidgetActionComboBox{
+    background-color:rgb(60,60,60);
+}
+
+
+
+QComboBox#WidgetActionComboBox {
+    border: 1px solid gray;   /* 边框 */
+    border-radius: 3px;   /* 圆角 */
+    padding: 3px 10px 3px 5px;   /* 字体填衬 */
+    color: #FFFFFF;
+    font: 75 11pt "Microsoft YaHei";
+    background: transparent;
+}
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox#WidgetActionComboBox QAbstractItemView {
+    outline: 0px solid gray;   /* 选定项的虚框 */
+    color: #FFFFFF;
+    background-color: #444444;   /* 整个下拉窗体的背景色 */
+    selection-color:#BFFFBF;
+    selection-background-color: #666666;   /* 整个下拉窗体被选中项的背景色 */
+}

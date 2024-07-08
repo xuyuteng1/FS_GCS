@@ -1,0 +1,409 @@
+﻿/* *********************** TitleWidget ***********************************/
+/*=========================== WidgetTitle ============================*/
+QWidget#widgetitle,QWidget#TitleWidget{
+    background-color:rgba(6,7,19,255);
+    border: 0px solid gray;   /* 边框 */
+}
+
+QLabel#widgetitle{
+    color:#FFFFff;
+    font: 400 10pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,10);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border: 0px solid gray;   /* 边框 */
+}
+
+QPushButton#widgetitle{
+    background-color:rgba(0,0,0,0);
+    border: 0px solid gray;   /* 边框 */
+}
+
+QPushButton#widgetitle:hover{
+    background-color:rgba(239, 87, 103,255);
+}
+
+QPushButton#widgetitle:pressed{
+    background-color:rgba(239, 87, 103,200);
+}
+
+QLabel#versionLabel,QLabel#altitudeLabel,QLabel#sateLabel,QLabel#positionPerLabel,QLabel#nowAirIDLabel{
+    color:#FFFFFF;
+    font: 400 11pt "Microsoft YaHei UI";
+    background-color:rgba(22,25,41,255);
+}
+
+QLabel#locationLng,QLabel#locationLat,QLabel#dateTimeLabel{
+    color:#FFFFFF;
+    font: 400 9pt "Microsoft YaHei UI";
+    background-color:rgba(22,25,41,255);
+}
+
+
+
+QPushButton#closeButton,QPushButton#connectionButton,QPushButton#minimizeButton,QPushButton#selectButton{
+    background-color:rgba(9,9,95,0);
+    font: 13pt;
+    color:#FFFFFF;
+    font-family:SimHei;
+}
+
+QPushButton#closeButton::hover
+{
+    background-color:rgba(255,9,9,0.4);
+}
+QPushButton#minimizeButton::hover,QPushButton#selectButton::hover{
+    background-color:rgba(9,255,255,0.4);
+}
+
+QPushButton#closeButton::pressed
+{
+    background-color:rgba(255,9,9,0.8);
+}
+
+QPushButton#minimizeButton::pressed,QPushButton#selectButton::pressed{
+    background-color:rgba(9,255,255,0.6);
+}
+
+
+QPushButton#connectionButton:hover{
+    font: 14pt;
+    color:#6FFF6F;
+    background-color:rgba(9,255,200,0.2);
+}
+
+QPushButton#connectionButton:pressed{
+    font: 14pt;
+    color:#2FFF2F;
+    background-color:rgba(9,255,200,0.6);
+}
+
+
+
+/* ***********************settingWidget ***********************************/
+QWidget#TabBarWidget {
+    margin: 0px;
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(15,15,15,0.9),stop:0.5 rgba(15,15,15,0.9),stop:1 rgba(15,15,15,0.9));
+    padding:3px;
+    border-right: 3px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(20,20,20,0),stop:0.5 rgba(20,20,20,0.9),stop:1 rgba(20,20,20,0)) ;
+    border-left: 3px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(20,20,20,0),stop:0.5 rgba(20,20,20,0.9),stop:1 rgba(20,20,20,0)) ;
+}
+
+QWidget#SettingWidget{
+    margin: 0px;
+    background-color:rgb(9,9,95);
+    padding:0px;
+    border:none;
+}
+
+
+
+QStackedWidget#SettingWidgetStack,QStackedWidget#ParameterConfig{
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(20,20,20,0.7),stop:0.3 rgba(20,20,20,0.8),stop:0.7 rgba(20,20,20,0.8),stop:1 rgba(20,20,20,0.7));
+    border-right: 5px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(20,20,20,0),stop:0.5 rgba(20,20,20,20==0.9),stop:1 rgba(20,20,20,0)) ;
+}
+
+
+QGroupBox#settingTitleWidget{
+    margin: 0px;
+    background-color:rgb(25,25,25);
+    padding:0px;
+    border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(120,120,120,0),stop:0.5 rgba(140,140,140,0.9),stop:1 rgba(120,120,120,0));
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(120,120,120,0),stop:0.5 rgba(140,140,140,0.9),stop:1 rgba(120,120,120,0));
+    border-left:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(120,120,120,0.6),stop:0.5 rgba(140,140,140,0.9),stop:1 rgba(120,120,120,0));
+    border-right:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(120,120,120,0.6),stop:0.5 rgba(140,140,140,0.9),stop:1 rgba(120,120,120,0));
+}
+
+QLabel#SettingNameLabel{
+    font: 16pt;
+    color:#DFBF6F;
+    font-family:SimHei;
+}
+
+/*设置界面tabBar样式*/
+QPushButton#tabBarButton{
+    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0,stop:0 rgba(100,110,110,0.4), stop:1 rgba(110,120,120,0.4));
+    color:#C0D0D0;
+    font:18px;
+    height:40px;
+    border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(60,60,60,0),stop:0.5 rgba(40,40,40,0.9),stop:1 rgba(60,60,60,0));
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(60,60,60,0),stop:0.5 rgba(40,40,40,0.9),stop:1 rgba(60,60,60,0)) ;
+}
+
+QPushButton#tabBarButton:hover{
+    border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(10,10,10,0),stop:0.5 rgba(10,10,10,0.9),stop:1 rgba(10,10,10,0)) ;
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(10,10,10,0),stop:0.5 rgba(10,10,10,0.9),stop:1 rgba(10,10,10,0)) ;
+    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0,stop:0 rgba(160,170,170,0.4), stop:1 rgba(170,180,180,0.4));
+}
+
+QPushButton#tabBarButton:pressed{
+    border-right:3px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(10,10,10,0),stop:0.5 rgba(10,10,10,0.9),stop:1 rgba(10,10,10,0)) ;
+    border-left:3px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(10,10,10,0),stop:0.5 rgba(10,10,10,0.9),stop:1 rgba(10,10,10,0)) ;
+    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0,stop:0 rgba(210,220,220,0.4), stop:1 rgba(220,230,230,0.4));
+}
+
+QLabel#SettingWidgetName{
+    font: 19px;
+    font-family:SimHei;
+    color:#EFFD40;
+    border-top: 2px solid rgba(40,40,60,255) ;
+    border-bottom: 3px double rgba(40,40,60,255) ;
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(200,220,180,0),stop:0.5 rgba(200,200,200,0.2),stop:1 rgba(200,220,180,0));
+}
+
+/* ***********************settingWidget end***********************************/
+
+
+
+
+
+/******************************QMessageBox*********************************/
+
+QMessageBox {
+    color:#FFFFff;
+    font: 400 7.5pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,0.15);
+}
+
+QMessageBox QLabel {
+    color:#FFFFff;
+    font: 400 7.5pt "Microsoft YaHei";
+}
+
+QMessageBox QPushButton {
+    color:#FFFFff;
+    font: 400 8pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,255);
+}
+
+QMessageBox QPushButton:hover{
+    color:#FFFFff;
+    font: 400 8pt "Microsoft YaHei";
+    background-color:rgba(239, 87, 103,255);
+}
+
+QMessageBox QPushButton:pressed{
+    color:#FFFFff;
+    font: 400 8pt "Microsoft YaHei";
+    background-color:rgba(239, 87, 103,200);
+}
+
+/**************************QMesssageBox End****************************/
+
+
+
+
+QToolButton#RangingToolBar{
+    background-color:rgba(60,60,60,200);
+    background-origin: content;
+    background-position: top;
+    padding-top: 1px;
+    background-repeat: no-repeat;
+
+    text-align: bottom;
+    padding-bottom:-1px;
+
+    border-radius: 2px;
+    font: 7pt;
+    font-family:SimHei;
+    color:#FFFFFF;
+
+    border-top:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-bottom:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-left:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-right:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+
+}
+
+
+QToolButton#RangingToolBar:checked{
+    background-color:rgba(160,160,160,200);
+
+    background-origin: content;
+    background-position: top;
+    padding-top: 1px;
+    background-repeat: no-repeat;
+
+    text-align: bottom;
+    padding-bottom:-1px;
+
+    border-radius: 2px;
+    font: 7pt;
+    font-family:SimHei;
+    color:#FFFFFF;
+
+    border-top:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-bottom:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-left:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-right:2px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+
+}
+
+
+QToolButton#RangingToolBar:hover{
+    background-color:rgba(40,40,40,200);
+
+    font: 8pt;
+    color:#00FF00;
+    border-radius: 1px;
+
+    background-origin: content;
+    background-position: top;
+    padding-top: 1px;
+    background-repeat: no-repeat;
+
+    text-align: bottom;
+    padding-bottom:-1px;
+
+    border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-left:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-right:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+}
+
+QToolButton#RangingToolBar:hover:checked{
+    background-color:rgba(140,140,140,200);
+
+    font: 8pt;
+    color:#00FF00;
+    border-radius: 1px;
+
+    background-origin: content;
+    background-position: top;
+    padding-top: 1px;
+    background-repeat: no-repeat;
+
+    text-align: bottom;
+    padding-bottom:-1px;
+
+    border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-left:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-right:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+}
+
+QToolButton#RangingToolBar:pressed{
+    background-color:rgba(20,20,20,200);
+
+    border-radius: 1px;
+    font: 8pt;
+    color:#FF0000;
+
+    background-origin: content;
+    background-position: top;
+    padding-top: 2px;
+    background-repeat: no-repeat;
+
+    text-align: bottom;
+    padding-bottom:-2px;
+
+    border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-left:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-right:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+
+}
+QToolButton#RangingToolBar:pressed:checked{
+    background-color:rgba(120,120,120,200);
+
+    border-radius: 1px;
+    font: 8pt;
+    color:#FF0000;
+
+    background-origin: content;
+    background-position: top;
+    padding-top: 2px;
+    background-repeat: no-repeat;
+
+    text-align: bottom;
+    padding-bottom:-2px;
+
+    border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-left:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+    border-right:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(200,200,200,0.6),stop:0.5 rgba(240,240,240,0.7),stop:1 rgba(200,200,200,0.6));
+
+}
+
+QListWidget#actionWidget::item{
+    color:#FFFFFF;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,0.2);
+    width:100;
+    height:30;
+    margin-top:1px;
+    margin-right:3px;
+    margin-left:3px;
+    margin-bottom:1px;
+
+}
+
+
+
+QListView#PromptWidget{
+    background-color:rgba(22,25,41,0);
+    border:0px solid #FFFFFF;
+    font: 16pt;
+}
+
+
+
+
+
+
+QListView#PromptWidget::item {
+    min-height:48px;
+    border-radius: 20px;
+    border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(22,25,41,255),stop:0.5 rgba(240,240,240,0.8),stop:1 rgba(22,25,41,255));
+    border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(22,25,41,255),stop:0.5 rgba(240,240,240,0.8),stop:1 rgba(22,25,41,255));
+    border-left:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(22,25,41,255),stop:0.5 rgba(240,240,240,0.8),stop:1 rgba(22,25,41,255));
+    border-right:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(22,25,41,255),stop:0.5 rgba(240,240,240,0.8),stop:1 rgba(22,25,41,255));
+    background-color:rgba(22,25,41,255);
+}
+
+
+
+
+QListView#ChatWidget{
+    background-color:rgba(6,7,19,0.95);
+    /* border:1px solid #191970; */
+}
+
+
+QScrollArea{
+    border: 0px solid;
+    border-right-width: 1px;
+    border-right-color: #dcdbdc;
+    background-color: rgb(68,68,68);
+}
+QScrollBar:vertical {
+    border: none;
+    background-color: rgb(68,68,68);
+    width: 8px;
+    margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+    background-color: rgb(20,20,20);
+    min-height: 20px;
+    border-radius: 2px;
+    border: none;
+}
+QScrollBar::add-line:vertical {
+    border: 0px solid grey;
+    background: #32CC99;
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    border: 0px solid grey;
+    background: #32CC99;
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+    width: 0px;
+    height: 0px;
+}

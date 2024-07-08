@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/fineTuning.png</file>
+        <file>img/lock.png</file>
+        <file>img/overlayVideo.png</file>
+        <file>img/swicthSensor.png</file>
+        <file>img/switchView.png</file>
+        <file>img/target_Car.png</file>
+        <file>img/target_Cross.png</file>
+        <file>img/target_General.png</file>
+        <file>img/unlock.png</file>
+        <file>img/YJYPtl.png</file>
+        <file>img/network.png</file>
+        <file>img/serialport.png</file>
+    </qresource>
+</RCC>

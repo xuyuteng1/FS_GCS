@@ -1,0 +1,969 @@
+﻿
+/*=========================== WidgetTitle ============================*/
+QWidget#widgetitle{
+    background-color:rgba(6,7,19,255);
+    border: 0px solid gray;   /* 边框 */
+}
+
+QLabel#widgetitle{
+    color:#FFFFff;
+    font: 400 10pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,10);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border: 0px solid gray;   /* 边框 */
+}
+
+QPushButton#widgetitle{
+    background-color:rgba(0,0,0,0);
+    border: 0px solid gray;   /* 边框 */
+}
+
+QPushButton#widgetitle:hover{
+    background-color:rgba(239, 87, 103,255);
+}
+
+QPushButton#widgetitle:pressed{
+    background-color:rgba(239, 87, 103,200);
+}
+
+
+
+/*=========================== Tab ============================*/
+QTabBar::tab{
+    color:#FFFFFF;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,0.2);
+
+    width:90px;
+    height:35;
+    margin-top:3px;
+    margin-right:3px;
+    margin-left:3px;
+    margin-bottom:3px;
+}
+QTabBar::tab:hover{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,200);
+    /* background-color:rgba(14, 174, 105,255);*/
+}
+
+QTabBar::tab:pressed{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,120);
+}
+
+QTabBar::tab:selected{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,255);
+}
+
+/*=========================== 按键 ============================*/
+QPushButton{
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,255);
+}
+
+QPushButton:hover{
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    /* background-color:rgba(22, 119,255,255);*/
+    background-color:rgba(22, 119, 255,180);
+}
+
+QPushButton:pressed{
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,160);
+}
+
+QPushButton:checked{
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background-color:rgba(15, 185, 112,255);
+}
+
+/*=========================== QGroupBox ============================*/
+QGroupBox{
+    /* background-color:rgba(22,25,41,255);*/
+    background-color:rgba(22, 119, 255,0.08);
+    border: 1px solid rgba(22,25,41,0.85);
+    border-radius:5px;
+    font: 600 9pt "Microsoft YaHei";
+    margin-left: 0;
+    margin-top: 10;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+QGroupBox::title
+{
+    color:#ffffff;
+    font: 600 10pt "Microsoft YaHei";
+    subcontrol-origin:margin;
+    subcontrol-position:top center;
+    padding:1px;
+}
+
+QGroupBox#CFGSubGroup{
+    background-color:rgba(22, 119, 255,0.05);
+    border: 1px solid rgba(180,180,180,255);
+    border-radius:1px;
+    font: 450 9pt "Microsoft YaHei";
+    margin-left: 0;
+    margin-top: 14;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+QGroupBox#CFGSubGroup::title
+{
+    color:"yellow";
+    font: 450 9pt "Microsoft YaHei";
+    subcontrol-origin:margin;
+    subcontrol-position:top center;
+    padding:1px;
+}
+
+QGroupBox#CFGMainGroup{
+    background-color:rgba(22, 119, 255,0.05);
+    border: 1px solid rgba(180,180,180,255);
+    border-radius:1px;
+    font: 450 11pt "Microsoft YaHei";
+    margin-left: 0;
+    margin-top: 14;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+QGroupBox#CFGMainGroup::title
+{
+    color:"yellow";
+    font: 450 11pt "Microsoft YaHei";
+    subcontrol-origin:margin;
+    subcontrol-position:top center;
+    padding:1px;
+}
+
+
+QGroupBox#GroupChartAction{
+    background-color:rgba(22,25,41,0.55);
+    border: 1px solid rgba(255,255,255,0.85);
+    border-radius:2px;
+    font: 400 9pt "Microsoft YaHei";
+    margin-left: 0;
+    margin-top: 1;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+QGroupBox#GroupChartAction::title
+{
+    color:"yellow";
+    font: 450 9pt "Microsoft YaHei";
+    subcontrol-origin:margin;
+    subcontrol-position:top center;
+    padding:1px;
+}
+
+
+QGroupBox#GroupChartItem{
+    background-color:rgba(22,25,41,0.55);
+    border: 0px solid rgba(255,255,255,0.85);
+    border-radius:2px;
+    font: 400 9pt "Microsoft YaHei";
+    margin-left: 0;
+    margin-top: 1;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+/*=========================== 下拉框样式 ============================*/
+QComboBox{
+    border: 1px solid gray;   /* 边框 */
+    border-radius: 1px;   /* 圆角 */
+    padding: 1px 3px 1px 3px;   /* 字体填衬 */
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background: rgba(22, 119, 255,0.25);
+}
+
+QComboBox QAbstractItemView {
+    outline: 1px solid gray;   /* 选定项的虚框 */
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background: rgba(22,25,41,255);/* 整个下拉窗体的背景色 */
+    selection-background-color: rgba(22, 119, 255,255);   /* 整个下拉窗体被选中项的背景色 */
+    selection-color:#0F0
+}
+
+QComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度（设置pComboBox->setView(new QListView());后，该项才起作用） */
+}
+
+QComboBox QAbstractItemView::item:hover {
+    color: #FFFFFF;
+    background-color: rgba(22, 119, 255,255);   /* 整个下拉窗体越过每项的背景色 */
+}
+
+/*=========================== 下拉框样式 ============================*/
+UComboBox{
+    border: 1px solid gray;   /* 边框 */
+    border-radius: 1px;   /* 圆角 */
+    padding: 1px 3px 1px 3px;   /* 字体填衬 */
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background: rgba(22, 119, 255,0.25);
+}
+UComboBox[changed = true]{
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background: rgba(15, 185, 112,0.85);
+}
+
+UComboBox QAbstractItemView {
+    outline: 1px solid gray;   /* 选定项的虚框 */
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background: rgba(22,25,41,255);/* 整个下拉窗体的背景色 */
+    selection-background-color: rgba(22, 119, 255,255);   /* 整个下拉窗体被选中项的背景色 */
+    selection-color:#0F0
+}
+
+UComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度（设置pComboBox->setView(new QListView());后，该项才起作用） */
+}
+
+UComboBox QAbstractItemView::item:hover {
+    color: #FFFFFF;
+    background-color: rgba(22, 119, 255,255);   /* 整个下拉窗体越过每项的背景色 */
+}
+/*=========================== 表格样式 ============================*/
+/*QTableView 左上角样式*/
+QTableView QTableCornerButton::section {
+    color: red;
+    background-color: rgba(14, 174, 105,255);
+    alternate-background-color: rgba(22, 119, 255,120);
+    selection-background-color: rgba(22, 119, 255,255);
+    border: 0px solid #f6f7fa;
+    border-radius:0px;
+    border-color: rgb(64, 64, 64);
+ }
+ QTableView{
+     color:#FFFFff;
+     font: 400 8.5pt "Microsoft YaHei";
+     background-color:rgba(22,25,41,255);
+     gridline-color: black;
+     selection-color: white;
+     alternate-background-color: rgba(22, 119, 255,120);
+     selection-background-color: rgba(22, 119, 255,255);
+     border: 1px solid rgba(255,255,255,100);
+     border-radius: 0px;
+     padding: 1px 1px;
+ }
+QHeaderView {
+    color:#FFFFff;
+    font: 600 9pt "Microsoft YaHei";
+
+    background-color:black;
+    border:1px solid rgba(100,100,100,120);
+    border-left-color: rgba(100,100,100,120);
+    border-top-color: rgba(100,100,100,120);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color:#FFFFff;
+    font: 600 9pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,200);
+    alternate-background-color: rgba(22, 119, 255,120);
+    selection-background-color: rgba(22, 119, 255,255);
+
+    border: 0px solid rgba(100,100,100,120);
+    border-radius:0px;
+    border-color:rgba(100,100,100,120);
+}
+
+/*=========================== 表格样式 ============================*/
+QLineEdit{
+    border: 1px solid gray;   /* 边框 */
+    border-radius: 3px;   /* 圆角 */
+    padding: 3px 10px 3px 5px;   /* 字体填衬 */
+    color: #FFFFFF;
+    font: 400 9pt "Microsoft YaHei";
+    background: transparent;
+}
+/*=========================== 滚轮样式 ============================*/
+QScrollArea{
+    border: 0px solid;
+    border-right-width: 1px;
+    border-right-color: #dcdbdc;
+    background-color: rgb(68,68,68);
+}
+QScrollBar:vertical {
+    border: none;
+    background-color: rgb(68,68,68);
+    width: 14px;
+    margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:vertical {
+    /*background-color: rgba(14, 174, 105,255);*/
+    background-color: rgba(22, 119,255,0.5);
+    min-height: 20px;
+    border-radius: 2px;
+    border: none;
+}
+
+QScrollBar::handle:vertical:hover {
+    /*background-color: rgba(14, 174, 105,255);*/
+    background-color: rgba(22, 119,255,1);
+    min-height: 20px;
+    border-radius: 2px;
+    border: none;
+}
+QScrollBar::add-line:vertical {
+    border: 0px solid grey;
+    background: #32CC99;
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    border: 0px solid grey;
+    background: #32CC99;
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: rgb(68,68,68);
+    height: 14px;
+    margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:horizontal {
+    /*background-color: rgba(14, 174, 105,255);*/
+    background-color: rgba(22, 119,255,0.5);
+    min-width: 20px;
+    border-radius: 2px;
+    border: none;
+}
+
+QScrollBar::handle:horizontal:hover {
+    /*background-color: rgba(14, 174, 105,255);*/
+    background-color: rgba(22, 119,255,1);
+    min-width: 20px;
+    border-radius: 2px;
+    border: none;
+}
+QScrollBar::add-line:horizontal {
+    border: 0px solid grey;
+    background: #32CC99;
+    width: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+    border: 0px solid grey;
+    background: #32CC99;
+    width: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+/*=========================== 窗体背景色 ============================*/
+QWidget#test{
+    background-color:rgba(22,25,41,255);
+    border: 0px solid gray;   /* 边框 */
+}
+/*=========================== TABWIDGET ============================*/
+QTabWidget{
+    background-color:rgba(22,25,41,255);
+    border: 0px solid white;
+    font: 400 9pt "Microsoft YaHei";
+}
+QTabWidget::pane{
+    background-color:rgba(22,25,41,255);
+    border: 0px solid white;
+    font: 400 9pt "Microsoft YaHei";
+}
+
+
+/*=========================== Label ============================*/
+QLabel{
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+}
+
+QLabel#CFGLabelState{
+    color:yellow;
+    font: 600 10pt "Microsoft YaHei";
+}
+
+QLabel#CFGLabelInfo{
+    color:white;
+    font: 400 9pt "Microsoft YaHei";
+}
+QLabel#CFGLabelWarning{
+    color:red;
+    font: 400 9pt "Microsoft YaHei";
+}
+QLabel#CFGLabelPre{
+    color:white;
+    font: 400 9pt "Microsoft YaHei";
+}
+
+QLabel#label_chart_item{
+    color:white;
+    font: 500 8.5pt "Microsoft YaHei";
+
+    max-width:80px;
+}
+/*=========================== QListWidget#actionWidget ============================*/
+QListWidget#actionWidget{
+    background-color:rgba(6,7,19,255);
+    border: 1px solid rgba(120,120,120,120);   /* 边框 */
+}
+
+QListWidget#actionWidget::item{
+    color:#FFFFFF;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,0.2);
+    width:100;
+    height:30;
+    margin-top:1px;
+    margin-right:3px;
+    margin-left:3px;
+    margin-bottom:1px;
+
+}
+QListWidget#actionWidget::item:hover{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,200);
+    /* background-color:rgba(14, 174, 105,255);*/
+}
+
+QListWidget#actionWidget::item:pressed{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,120);
+}
+
+QListWidget#actionWidget::item:selected{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,255);
+}
+
+
+
+
+/*=========================== QListWidget#configWidget ============================*/
+QListWidget#configWidget{
+    background-color:rgba(6,7,19,255);
+    border: 1px solid rgba(120,120,120,120);   /* 边框 */
+}
+
+QListWidget#configWidget::item{
+    color:rgba(22,25,41,255);
+    font: 450 1pt "Microsoft YaHei";
+    background-color:rgba(22,25,41,255);
+    width:100;
+    height:30;
+    margin-top:5px;
+    margin-right:3px;
+    margin-left:3px;
+    margin-bottom:30px;
+
+}
+
+QListWidget#configWidget::item:selected{
+    color:rgba(22,25,41,255);
+    font: 450 1pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,0.15);
+}
+
+
+/*=========================== QListWidget#ListWidget_Chartitem ============================*/
+QListWidget#ListWidget_Chartitem{
+    background-color:rgba(6,7,19,255);
+    border: 1px solid rgba(120,120,120,120);   /* 边框 */
+    max-width:200;
+}
+
+QListWidget#ListWidget_Chartitem::item{
+    color:#FFFFFF;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,0.2);
+    max-width:200;
+    height:30;
+    margin-top:1px;
+    margin-right:3px;
+    margin-left:3px;
+    margin-bottom:1px;
+
+}
+QListWidget#ListWidget_Chartitem::item:hover{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,200);
+    /* background-color:rgba(14, 174, 105,255);*/
+}
+
+QListWidget#ListWidget_Chartitem::item:pressed{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,120);
+}
+
+QListWidget#ListWidget_Chartitem::item:selected{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,0.2);
+}
+/*=========================== QSpinBox ============================*/
+QSpinBox{
+    color:#FFFFff;
+    min-width:85px;
+    font: 600 9pt "Microsoft YaHei";
+    background-color:rgba(255, 255, 255,0.1);
+}
+
+QSpinBox::up-button{
+    border-image:url(:/img/spinbox/increase.png) stretch;
+    subcontrol-position:right;
+    background-color:rgba(22, 119, 255,255);
+    width:15px;
+    height:20px;
+}
+QSpinBox::up-button:pressed{
+    background-color:rgba(22, 119, 255,0.5);
+    margin-top:3px;
+}
+
+QSpinBox::up-button:hover{
+    background-color:rgba(22, 119, 255,0.6);
+}
+
+QSpinBox::down-button{
+    border-image:url(:/img/spinbox/decrease.png) stretch;
+    subcontrol-position:left;
+    background-color:rgba(22, 119, 255,255);
+    width:15px;
+    height:20px;
+}
+QSpinBox::down-button:pressed{
+    background-color:rgba(22, 119, 255,0.5);
+    margin-top:3px;
+}
+QSpinBox::down-button:hover{
+    background-color:rgba(22, 119, 255,0.6);
+}
+
+/*=========================== QSpinBox ============================*/
+QDoubleSpinBox{
+    color:#FFFFff;
+    min-width:85px;
+    font: 600 9pt "Microsoft YaHei";
+    background-color:rgba(255, 255, 255,0.1);
+}
+
+QDoubleSpinBox::up-button{
+    border-image:url(:/img/spinbox/increase.png) stretch;
+    subcontrol-position:right;
+    background-color:rgba(22, 119, 255,255);
+    width:15px;
+    height:20px;
+}
+QDoubleSpinBox::up-button:pressed{
+    background-color:rgba(22, 119, 255,0.5);
+    margin-top:3px;
+}
+
+QDoubleSpinBox::up-button:hover{
+    background-color:rgba(22, 119, 255,0.6);
+}
+
+QDoubleSpinBox::down-button{
+    border-image:url(:/img/spinbox/decrease.png) stretch;
+    subcontrol-position:left;
+    background-color:rgba(22, 119, 255,255);
+    width:15px;
+    height:20px;
+}
+QDoubleSpinBox::down-button:pressed{
+    background-color:rgba(22, 119, 255,0.5);
+    margin-top:3px;
+}
+QDoubleSpinBox::down-button:hover{
+    background-color:rgba(22, 119, 255,0.6);
+}
+
+
+/*=========================== QSpinBox ============================*/
+USpinBox{
+    min-width:85px;
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background: rgba(22, 119, 255,0.25);
+}
+USpinBox[changed = true]{
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background: rgba(15, 185, 112,0.85);
+}
+
+
+USpinBox::up-button{
+    border-image:url(:/img/spinbox/increase.png) stretch;
+    subcontrol-position:right;
+    background-color:rgba(22, 119, 255,255);
+    width:15px;
+    height:20px;
+}
+USpinBox::up-button:pressed{
+    background-color:rgba(22, 119, 255,0.5);
+    margin-top:3px;
+}
+
+USpinBox::up-button:hover{
+    background-color:rgba(22, 119, 255,0.6);
+}
+
+USpinBox::down-button{
+    border-image:url(:/img/spinbox/decrease.png) stretch;
+    subcontrol-position:left;
+    background-color:rgba(22, 119, 255,255);
+    width:15px;
+    height:20px;
+}
+USpinBox::down-button:pressed{
+    background-color:rgba(22, 119, 255,0.5);
+    margin-top:3px;
+}
+USpinBox::down-button:hover{
+    background-color:rgba(22, 119, 255,0.6);
+}
+
+/*=========================== QSpinBox ============================*/
+UDoubleSpinBox{
+    min-width:85px;
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background: rgba(22, 119, 255,0.25);
+}
+UDoubleSpinBox[changed = true]{
+    color:#FFFFff;
+    font: 400 9pt "Microsoft YaHei";
+    background: rgba(15, 185, 112,0.85);
+}
+
+UDoubleSpinBox::up-button{
+    border-image:url(:/img/spinbox/increase.png) stretch;
+    subcontrol-position:right;
+    background-color:rgba(22, 119, 255,255);
+    width:15px;
+    height:20px;
+}
+UDoubleSpinBox::up-button:pressed{
+    background-color:rgba(22, 119, 255,0.5);
+    margin-top:3px;
+}
+
+UDoubleSpinBox::up-button:hover{
+    background-color:rgba(22, 119, 255,0.6);
+}
+
+UDoubleSpinBox::down-button{
+    border-image:url(:/img/spinbox/decrease.png) stretch;
+    subcontrol-position:left;
+    background-color:rgba(22, 119, 255,255);
+    width:15px;
+    height:20px;
+}
+UDoubleSpinBox::down-button:pressed{
+    background-color:rgba(22, 119, 255,0.5);
+    margin-top:3px;
+}
+UDoubleSpinBox::down-button:hover{
+    background-color:rgba(22, 119, 255,0.6);
+}
+/*=========================== QProgressBar ============================*/
+QProgressBar{
+    max-width:40;
+    color: white;
+    font: 600 6pt "Microsoft YaHei";
+    border: 1px solid rgba(85, 255, 255,255);
+    border-radius: 5px;
+    background-color: rgb(11, 10, 8);
+}
+
+QProgressBar::chunk{
+    border-radius: 3px;
+    background-color: green;
+}
+
+QToolTip{
+    border:1px solid rgb(118, 118, 118);
+    background-color: rgba(15, 185, 112,255);
+    color:#FFFFff;
+    font: 600 9pt "Microsoft YaHei";
+}
+
+
+/*=========================== QMenu ============================*/
+QMenu{
+    background-color: rgba(22, 119,255,0.05);
+    font: 450 9pt "Microsoft YaHei";
+    color:rgb(225,225,225);
+    border-radius:2px;
+    width:115px;
+}
+
+QMenu::item{
+    width:115px;height:22px;
+    background-color: rgba(22, 119,255,0.2);
+    border:1px solid rgb(55,55,55);
+    font: 400 8.5pt "Microsoft YaHei";
+    border-radius:1px;
+    padding: 0px 0px 0px 6px;
+    margin:1px 1px 1px 1px;
+}
+
+QMenu::item:selected{
+    background-color: rgba(22, 119,255,255);
+}
+
+QMenu::item:hover{
+    background-color:rgba(22, 119,255,200);
+}
+
+QMenu::item:pressed{
+    background-color:rgba(22, 119,255,220);
+}
+/*=========================== QToolBox ============================*/
+QToolBox {
+    background-color: rgba(22, 119,255,0.05);
+    font: 450 9pt "Microsoft YaHei";
+    color:rgb(225,225,225);
+    border-radius:1px;
+    border:1px solid rgb(111,111,111);
+}
+
+QToolBox::tab {
+    background:rgba(22, 119,255,0.2);
+    border-radius:2px;
+    font: 400 italic 9pt "Microsoft YaHei";
+    color:white;
+}
+
+/* 被选中的标签 */
+QToolBox::tab:selected {
+    background:rgba(22, 119, 255,255);
+    font: 500 italic 9pt  "Microsoft YaHei";
+    color:white;
+}
+/* 被选中的标签 */
+QToolBox::tab:pressed {
+    background:rgba(22, 119, 255,120);
+    font: 500 italic 9pt  "Microsoft YaHei";
+    color:white;
+}
+/* 被选中的标签 */
+QToolBox::tab:hover {
+    background:rgba(22, 119, 255,200);
+    font: 500 italic 9pt  "Microsoft YaHei";
+    color:white;
+}
+
+
+
+/*=========================== QCheckBox ============================*/
+QWidget#QWidgetChart{
+    background-color:rgba(22,25,41,200);
+    border: 0px solid gray;   /* 边框 */
+}
+
+QCheckBox {
+color: white;
+font: 400 8.5pt "Microsoft YaHei";
+/* background-color:rgb(101,101,101); */
+}
+
+/*checkbox样式设置*/
+QCheckBox::indicator {
+width: 17px;
+height: 17px;
+}
+/*未选中*/
+QCheckBox::indicator::unchecked {
+    image: url(:/img/checkstate/unselect.png);
+}
+
+/*选中*/
+
+QCheckBox::indicator::checked {
+    image: url(:/img/checkstate/select.png);
+}
+
+/*=========================== QCheckBox Chart============================*/
+QCheckBox#check_chart {
+color: white;
+max-width:20px;
+font: 400 8.5pt "Microsoft YaHei";
+/* background-color:rgb(101,101,101); */
+}
+
+/*checkbox样式设置*/
+QCheckBox#check_chart::indicator {
+width: 17px;
+height: 17px;
+}
+/*未选中*/
+QCheckBox#check_chart::indicator::unchecked {
+    image: url(:/img/checkstate/unselect.png);
+}
+
+/*选中*/
+
+QCheckBox#check_chart::indicator::checked {
+    image: url(:/img/checkstate/select.png);
+}
+
+
+
+/*RadioButton样式设置*/
+QRadioButton::indicator {
+        width: 17px;
+        height: 17px;
+}
+
+/*单选框未选中样式*/
+QRadioButton::indicator::unchecked {
+    image: url(:/img/checkstate/unselect.png);
+}
+
+/*单选框选中样式*/
+QRadioButton::indicator::checked {
+        image: url(:/img/checkstate/select.png);
+}
+
+/*RadioButton和checkbox字体和间距设置*/
+QRadioButton ,QCheckBox{
+        spacing: 5px;
+        font-size: 15px;
+}
+
+QWidget#ChartWidget{
+    background-color:rgba(22, 119,255,0.13);
+    border: 1px solid gray;   /* 边框 */
+}
+
+uChartView{
+    background-color:rgba(22, 119,255,255);
+    border: 1px solid white;   /* 边框 */
+}
+
+/*=========================== QCheckBox Chart============================*/
+QWidget#ParameterConfig{
+    background-color:rgba(22,25,41,255);
+    border: 0px solid gray;   /* 边框 */
+}
+
+
+QListView#ParameterConfig{
+    background-color:rgba(6,7,19,255);
+    border: 1px solid rgba(120,120,120,120);   /* 边框 */
+    color:#FFFFFF;
+    font: 450 9pt "Microsoft YaHei";
+
+    min-width:100px;
+}
+
+
+QListView#ParameterConfig::item{
+    color:#FFFFFF;
+    font: 450 9pt "Microsoft YaHei";
+    text-align:center;
+    width:100;
+    height:30;
+    margin-top:1px;
+    margin-right:3px;
+    margin-left:3px;
+    margin-bottom:1px;
+    min-height:35px;
+    background-color:rgba(22, 119,255,0.2);
+}
+
+
+QListView#ParameterConfig::item:hover{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119,255,200);
+    /* background-color:rgba(14, 174, 105,255);*/
+}
+
+QListView#ParameterConfig::item:pressed{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,120);
+}
+
+QListView#ParameterConfig::item:selected{
+    color:#FFFFff;
+    font: 450 9pt "Microsoft YaHei";
+    background-color:rgba(22, 119, 255,255);
+}
+
+
+QSplitter#ParameterConfig::handle {
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(61,61,61,255),stop:0.1 rgba(61,61,61,255),stop:0.2 rgba(22,25,41,255));
+}
+
+QSplitter#ParameterConfig::handle:pressed {
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(122,122,122,255),stop:0.5 rgba(122,122,122,255),stop:1 rgba(22,25,41,255));
+}
+
+QStackedWidget#ParameterConfig{
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,stop:0 rgba(20,20,20,0.7),stop:0.3 rgba(20,20,20,0.8),stop:0.7 rgba(20,20,20,0.8),stop:1 rgba(20,20,20,0.7));
+    border-right: 5px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 rgba(20,20,20,0),stop:0.5 rgba(20,20,20,20==0.9),stop:1 rgba(20,20,20,0)) ;
+}
+
+
+QWidget#param_cfgwidget{
+    background-color:rgba(22, 119, 255,0.05);
+    border: 1px solid rgba(180,180,180,255);
+    border-radius:1px;
+    font: 450 9pt "Microsoft YaHei";
+    margin-left: 0;
+    margin-top: 14;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+QWidget#param_cfgwidget::title
+{
+    color:"yellow";
+    font: 450 9pt "Microsoft YaHei";
+    subcontrol-origin:margin;
+    subcontrol-position:top center;
+    padding:1px;
+}
+

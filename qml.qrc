@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/GIS_Map.qml</file>
+        <file>qml/GIS_BaseMap.qml</file>
+        <file>qml/GIS_RoutesLayers.qml</file>
+        <file>qml/GIS_AirPositionLayers.qml</file>
+        <file>qml/GIS_NoFlyZoneLayers.qml</file>
+        <file>qml/GIS_MapToolLayers.qml</file>
+        <file>qml/GIS_AirPointLayers.qml</file>
+        <file>qml/GIS_TargetPos.qml</file>
+        <file>qml/GIS_RTLWaypoint.qml</file>
+    </qresource>
+</RCC>

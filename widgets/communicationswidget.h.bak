@@ -1,0 +1,81 @@
+#ifndef COMMUNICATIONSWIDGET_H
+#define COMMUNICATIONSWIDGET_H
+
+#include <QTabWidget>
+#include <QLabel>
+#include <QPushButton>
+#include <QComboBox>
+#include <QGroupBox>
+#include <QGridLayout>
+#include <QSerialPortInfo>
+#include <QPushButton>
+#include <QLineEdit>
+#include <QSerialPortInfo>
+#include <QDebug>
+#include <QTimer>
+#include <QFile>
+
+#include "net_udp.h"
+#include "serialport.h"
+#include "AP_FlyLink_Com.h"
+class CommunicationsWidget : public QTabWidget
+{
+    Q_OBJECT
+public:
+    CommunicationsWidget();
+
+    AP_FlyLink_Com *getLink() const;
+
+private:
+    QGroupBox *basicConfigWidget = nullptr;
+    QGridLayout *basicConfigWidgetLayout = nullptr;
+
+    QLabel *basic_CommunicationModeNameLabel = nullptr;
+    QComboBox *basic_CommunicationModeName = nullptr;
+
+    QLabel *basic_SerialNameLabel = nullptr;
+    QComboBox *basic_SerialNameComboBox = nullptr;
+
+    QLabel *basic_SerialBaudLabel = nullptr;
+    QComboBox *basic_SerialBaudComboBox = nullptr;
+
+    QLabel *basic_UdpIPLabel = nullptr;
+    QLineEdit *basic_UdpIPEdit = nullptr;
+
+    QLabel *basic_UdpPortLabel = nullptr;
+    QLineEdit *basic_UdpPortEdit = nullptr;
+
+    QPushButton *connectionButton = nullptr;
+    QPushButton *exitButton = nullptr;
+    AP_FlyLink_Com* link = nullptr;
+
+
+private:
+    QTimer *basic_timer = nullptr;
+
+    QList<QString> comList;
+
+private:
+    void widgetInit();
+
+    void basicConfigWidgetInit();
+
+    void connectSignalAndSlot();
+
+private slots:
+    void basic_CommunicationModeNameChangedSlot(QString text);
+
+    void basic_timerout();
+
+    void basicConnectButtonPressedSlot();
+
+    void exitButtonPressedSllot();
+
+private:
+    bool is_connect = false;
+//    NetUDP*         link_udp = nullptr;
+//    SerialPort*     link_serial  = nullptr;
+
+};
+
+#endif // COMMUNICATIONSWIDGET_H

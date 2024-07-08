@@ -1,0 +1,250 @@
+#include "communicationswidget.h"
+
+CommunicationsWidget::CommunicationsWidget()
+{
+    widgetInit();
+    connectSignalAndSlot();
+}
+
+AP_FlyLink_Com *CommunicationsWidget::getLink() const
+{
+    return link;
+}
+
+void CommunicationsWidget::widgetInit()
+{
+    basicConfigWidgetInit();
+
+    this->addTab(this->basicConfigWidget,QStringLiteral("基础连接"));
+//    this->addTab(new QGroupBox,QStringLiteral("光电连接"));
+
+    this->setWindowTitle(QStringLiteral("通讯连接"));
+    this->setObjectName("CommunicationsWidget");
+    this->setWindowFlags(Qt::Widget);
+
+    QFile file(QString(":/style/communiicationswidget.qss"));
+
+    if(file.open(QIODevice::ReadOnly)){
+        this->setStyleSheet(file.readAll());
+        file.close();
+    }
+
+    this->resize(450,350);
+}
+
+
+void CommunicationsWidget::basicConfigWidgetInit()
+{
+    if(this->basicConfigWidget == nullptr){
+        this->basicConfigWidget = new QGroupBox;
+        this->basicConfigWidget->setObjectName("basicConfigWidget");
+
+    }
+
+    if(this->basicConfigWidgetLayout == nullptr){
+        this->basicConfigWidgetLayout = new QGridLayout;
+
+    }
+
+    if(this->basic_CommunicationModeNameLabel == nullptr){
+        this->basic_CommunicationModeNameLabel = new QLabel(QStringLiteral("链接模式:"));
+        this->basic_CommunicationModeNameLabel->setObjectName("Basic_NameLabel");
+    }
+
+    if(this->basic_CommunicationModeName == nullptr){
+        this->basic_CommunicationModeName = new QComboBox;
+        this->basic_CommunicationModeName->addItems(QStringList()<<QStringLiteral("串  口")<<QStringLiteral("网  络"));
+        this->basic_CommunicationModeName->setObjectName("Basic_ComboBox");
+    }
+
+    if(this->basic_SerialNameLabel == nullptr){
+        this->basic_SerialNameLabel = new QLabel(QStringLiteral("串口号:"));
+        this->basic_SerialNameLabel->setObjectName("Basic_NameLabel");
+
+    }
+
+    if(this->basic_SerialNameComboBox == nullptr){
+        this->basic_SerialNameComboBox = new QComboBox();
+        this->basic_SerialNameComboBox->setObjectName("Basic_ComboBox");
+
+    }
+
+    if(this->basic_SerialBaudLabel == nullptr){
+        this->basic_SerialBaudLabel = new QLabel(QStringLiteral("波特率:"));
+        this->basic_SerialBaudLabel->setObjectName("Basic_NameLabel");
+
+    }
+
+    if(this->basic_SerialBaudComboBox == nullptr){
+        this->basic_SerialBaudComboBox = new QComboBox();
+        this->basic_SerialBaudComboBox->addItems(QStringList()<<"4800"<<"9600"<<"14400"<<"19200"<<"38400"<<"56000"<<"57600"<<"115200"<<"230400");
+        this->basic_SerialBaudComboBox->setCurrentText("115200");
+        this->basic_SerialBaudComboBox->setObjectName("Basic_ComboBox");
+    }
+
+
+    if(this->basic_UdpIPLabel == nullptr){
+        this->basic_UdpIPLabel = new QLabel(QStringLiteral("IP地址:"));
+        this->basic_UdpIPLabel->setObjectName("Basic_NameLabel");
+    }
+
+    if(this->basic_UdpIPEdit == nullptr){
+        this->basic_UdpIPEdit = new QLineEdit("127.0.0.1");
+        this->basic_UdpIPEdit->setObjectName("Basic_LineEdit");
+    }
+
+    if(this->basic_UdpPortLabel == nullptr){
+        this->basic_UdpPortLabel = new QLabel(QStringLiteral("端口号:"));
+        this->basic_UdpPortLabel->setObjectName("Basic_NameLabel");
+    }
+
+    if(this->basic_UdpPortEdit == nullptr){
+        this->basic_UdpPortEdit = new QLineEdit("8234");
+        this->basic_UdpPortEdit->setObjectName("Basic_LineEdit");
+    }
+
+    if(this->connectionButton == nullptr){
+        this->connectionButton = new QPushButton(QStringLiteral("连接"));
+        this->connectionButton->setObjectName("Basic_Button");
+    }
+
+    if(this->exitButton == nullptr){
+        this->exitButton = new QPushButton(QStringLiteral("退出"));
+        this->exitButton->setObjectName("Basic_Button");
+    }
+
+    this->basicConfigWidgetLayout->addWidget(this->basic_CommunicationModeNameLabel,0,0,1,2);
+    this->basicConfigWidgetLayout->addWidget(this->basic_CommunicationModeName,0,2,1,4);
+    this->basicConfigWidgetLayout->addWidget(this->basic_SerialNameLabel,1,0,1,2);
+    this->basicConfigWidgetLayout->addWidget(this->basic_SerialNameComboBox,1,2,1,4);
+    this->basicConfigWidgetLayout->addWidget(this->basic_SerialBaudLabel,2,0,1,2);
+    this->basicConfigWidgetLayout->addWidget(this->basic_SerialBaudComboBox,2,2,1,4);
+    this->basicConfigWidgetLayout->addWidget(this->connectionButton,3,1,1,1);
+    this->basicConfigWidgetLayout->addWidget(this->exitButton,3,4,1,1);
+
+    this->basicConfigWidget->setLayout(this->basicConfigWidgetLayout);
+
+
+    if(this->basic_timer == nullptr){
+        this->basic_timer = new QTimer();
+        this->basic_timer->start(500);
+    }
+}
+
+void CommunicationsWidget::connectSignalAndSlot()
+{
+    connect(this->basic_CommunicationModeName,&QComboBox::currentTextChanged,this,&CommunicationsWidget::basic_CommunicationModeNameChangedSlot);
+    connect(this->basic_timer,&QTimer::timeout,this,&CommunicationsWidget::basic_timerout);
+    connect(this->connectionButton,&QPushButton::pressed,this,&CommunicationsWidget::basicConnectButtonPressedSlot);
+    connect(this->exitButton,&QPushButton::pressed,this,&CommunicationsWidget::exitButtonPressedSllot);
+
+}
+
+void CommunicationsWidget::basic_CommunicationModeNameChangedSlot(QString text)
+{
+    QLayoutItem *child;
+    int count = this->basicConfigWidgetLayout->count();
+
+    for(int i = 0; i < count; i++)
+    {
+        child = this->basicConfigWidgetLayout->takeAt(0);
+        //删除Stretch(弹簧)等布局
+        if (child->spacerItem())
+        {
+            this->basicConfigWidgetLayout->removeItem(child);
+            continue;
+        }
+        //删除布局
+        this->basicConfigWidgetLayout->removeWidget(child->widget());
+        child->widget()->setParent(0);
+        delete child;
+    }
+
+    if(text.compare(QStringLiteral("串  口")) == 0){
+        this->basicConfigWidgetLayout->addWidget(this->basic_CommunicationModeNameLabel,0,0,1,2);
+        this->basicConfigWidgetLayout->addWidget(this->basic_CommunicationModeName,0,2,1,3);
+        this->basicConfigWidgetLayout->addWidget(this->basic_SerialNameLabel,1,0,1,2);
+        this->basicConfigWidgetLayout->addWidget(this->basic_SerialNameComboBox,1,2,1,3);
+        this->basicConfigWidgetLayout->addWidget(this->basic_SerialBaudLabel,2,0,1,2);
+        this->basicConfigWidgetLayout->addWidget(this->basic_SerialBaudComboBox,2,2,1,3);
+        this->basicConfigWidgetLayout->addWidget(this->connectionButton,3,1,1,1);
+        this->basicConfigWidgetLayout->addWidget(this->exitButton,3,3,1,1);
+
+        this->basicConfigWidget->update();
+    }else{
+        this->basicConfigWidgetLayout->addWidget(this->basic_CommunicationModeNameLabel,0,0,1,2);
+        this->basicConfigWidgetLayout->addWidget(this->basic_CommunicationModeName,0,2,1,3);
+        this->basicConfigWidgetLayout->addWidget(this->basic_UdpIPLabel,1,0,1,2);
+        this->basicConfigWidgetLayout->addWidget(this->basic_UdpIPEdit,1,2,1,3);
+        this->basicConfigWidgetLayout->addWidget(this->basic_UdpPortLabel,2,0,1,2);
+        this->basicConfigWidgetLayout->addWidget(this->basic_UdpPortEdit,2,2,1,3);
+        this->basicConfigWidgetLayout->addWidget(this->connectionButton,3,1,1,1);
+        this->basicConfigWidgetLayout->addWidget(this->exitButton,3,3,1,1);
+
+        this->basicConfigWidget->update();
+    }
+}
+
+void CommunicationsWidget::basic_timerout()
+{
+    this->basic_timer->stop();
+    QList<QString> serialportinfo;
+    foreach(QSerialPortInfo info,QSerialPortInfo::availablePorts())
+    {
+        serialportinfo<<info.portName();
+    }
+
+    if(serialportinfo != this->comList){
+        this->basic_SerialNameComboBox->clear();
+        this->basic_SerialNameComboBox->addItems(serialportinfo);
+        this->comList = serialportinfo;
+    }
+    this->basic_timer->start(500);
+}
+
+void CommunicationsWidget::basicConnectButtonPressedSlot()
+{
+    QString param1;
+    QString param2;
+    int res = 0;
+    AP_FlyLink_Com::DeviceType device = AP_FlyLink_Com::Device_None;
+    if(this->basic_CommunicationModeName->currentText().compare(QStringLiteral("串  口")) == 0){
+        device = AP_FlyLink_Com::Device_SerialPort;
+        param1 = basic_SerialNameComboBox->currentText();
+        param2 = basic_SerialBaudComboBox->currentText();
+    }else{
+        device = AP_FlyLink_Com::Device_NetUDP;
+        param1 = basic_UdpIPEdit->text();
+        param2 = basic_UdpPortEdit->text();
+    }
+
+    if(!is_connect){
+        if(link==nullptr){
+            link = new AP_FlyLink_Com();
+        }
+        if(link!= nullptr){
+            if(link->open(device,param1,param2,res)){
+                is_connect = true;
+                connectionButton->setText(QStringLiteral("断开"));
+                this->basic_CommunicationModeName->setEnabled(false);
+            }
+        }
+    }
+    else{
+        if(link!= nullptr){
+            link->close();
+        }
+        is_connect = false;
+        connectionButton->setText(QStringLiteral("连接"));
+        this->basic_CommunicationModeName->setEnabled(true);
+    }
+}
+
+void CommunicationsWidget::exitButtonPressedSllot()
+{
+    this->close();
+}
+
+
+
+

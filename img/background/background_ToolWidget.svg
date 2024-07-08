@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 684 133" style="enable-background:new 0 0 684 133;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.6;fill:#161929;stroke:#0000FF;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#1677FF;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#1677FF;}
+	.st3{fill:#1677FF;stroke:url(#SVGID_1_);stroke-miterlimit:10;}
+	.st4{fill:#1677FF;stroke:#1677FF;stroke-miterlimit:10;}
+	.st5{fill:#0000FF;stroke:#1677FF;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#1677FF;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<g id="图层_3_x5F_复制">
+	<polygon class="st0" points="582,131 579.5,131 497,131 414.5,131 332,131 249.5,131 167,131 84.5,131 2,131 2,117.25 2,103.5 
+		2,89.75 2,76 2,62.25 2,48.5 2,34.75 2,21 4.5,18.5 7,16 9.5,13.5 12,11 14.5,8.5 17,6 19.5,3.5 22,1 106,1 115,9 204,9 214,1 
+		272.5,1 409,1 545.5,1 682,1 682,14.75 682,28.5 682,42.25 682,56 682,69.75 682,83.5 682,97.25 682,113.5 599.5,113.5 597,116 
+		594.5,118.5 592,121 589.5,123.5 587,126 584.5,128.5 	"/>
+</g>
+<g id="图层_3">
+	<polygon class="st1" points="582,131 579.5,131 497,131 414.5,131 332,131 249.5,131 167,131 84.5,131 2,131 2,117.25 2,103.5 
+		2,89.75 2,76 2,62.25 2,48.5 2,34.75 2,21 4.5,18.5 7,16 9.5,13.5 12,11 14.5,8.5 17,6 19.5,3.5 22,1 106,1 115,9 204,9 214,1 
+		272.5,1 409,1 545.5,1 682,1 682,14.75 682,28.5 682,42.25 682,56 682,69.75 682,83.5 682,97.25 682,113.5 599.5,113.5 597,116 
+		594.5,118.5 592,121 589.5,123.5 587,126 584.5,128.5 	"/>
+</g>
+<g id="图层_4">
+	<polygon class="st2" points="1,18 1,18 1,1 18,1 18,1 	"/>
+</g>
+<g id="图层_5">
+	
+		<radialGradient id="SVGID_1_" cx="160" cy="5.2288" r="35.5529" gradientTransform="matrix(1 0 0 5.7843 0 4666.4868)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.095" style="stop-color:#F3F8FF"/>
+		<stop  offset="0.2685" style="stop-color:#D2E5FF"/>
+		<stop  offset="0.5007" style="stop-color:#9DC6FF"/>
+		<stop  offset="0.7796" style="stop-color:#549BFF"/>
+		<stop  offset="1" style="stop-color:#1677FF"/>
+	</radialGradient>
+	<polygon class="st3" points="202.5,6.5 117.5,6.5 111,1.14 111,1.14 209,1.14 209,1.14 	"/>
+</g>
+<g id="图层_6">
+	<rect x="680" y="22" class="st4" width="4" height="76"/>
+</g>
+<g id="图层_7">
+	<polygon class="st5" points="598,131 588,131 603,116 613,116 	"/>
+	<polygon class="st5" points="614.59,131 604.59,131 619.59,116 629.59,116 	"/>
+	<polygon class="st5" points="630.59,131 621.59,131 636.59,116 645.59,116 	"/>
+	<polygon class="st5" points="647.59,131 637.59,131 652.59,116 662.59,116 	"/>
+	<polygon class="st5" points="664.11,131 654.11,131 669.11,116 679.11,116 	"/>
+</g>
+<g id="图层_8">
+	<polyline class="st6" points="56,131 2,131 2,76 	"/>
+</g>
+</svg>

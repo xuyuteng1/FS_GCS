@@ -1,0 +1,69 @@
+﻿QPushButton#ToolButton,QPushButton#ToolButton::!checked{
+    background-color:rgba(200,200,195,100);
+    color:#FFFFFF;
+    font-family:SimHei;
+    width:32px;
+    height:32px;
+}
+
+QPushButton#ToolButton::checked{
+    background-color:rgba(255,9,9,0.8);
+}
+
+QPushButton#ToolButton::hover
+{
+    background-color:rgba(255,9,9,0.4);
+}
+
+QPushButton#ToolButton::pressed
+{
+    background-color:rgba(255,9,9,0.8);
+}
+
+
+
+QPushButton#fineTuningButton,QPushButton#fineTuningButton::!checked{
+    background-color:rgba(9,9,95,20);
+    color:#FFFFFF;
+    font-family:SimHei;
+    width:30px;
+    height:30px;
+    border-radius:15px;
+}
+QPushButton#fineTuningButton,QPushButton#fineTuningButton::checked{
+    background-color:rgba(9,180,95,200);
+    color:#FFFFFF;
+    font-family:SimHei;
+    width:30px;
+    height:30px;
+    border-radius:15px;
+}
+QPushButton#fineTuningButton::hover
+{
+    background-color:rgba(255,9,9,0.4);
+}
+
+QPushButton#fineTuningButton::pressed
+{
+    background-color:rgba(255,9,9,0.8);
+}
+
+
+QLabel#statusNameLabel{
+    width:60;
+    height:30px;
+    font: 75 11pt "Microsoft YaHei";
+    color:rgb(255,0,0);
+}
+
+QLabel#statusValueLabel{
+    width:60;
+    height:30px;
+    font: 75 11pt "Microsoft YaHei";
+    color:rgb(255,0,0);
+}
+
+
+QWidget#StatusWidget{
+    background-color:rgba(40,40,40,40);
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<RCC>
+    <qresource prefix="/">
+        <file alias="qml/GIS_Map.qml">qml/GIS_Map.qml</file>
+        <file alias="qml/GIS_BaseMap.qml">qml/GIS_BaseMap.qml</file>
+        <file alias="qml/GIS_RoutesLayers.qml">qml/GIS_RoutesLayers.qml</file>
+        <file alias="qml/GIS_AirPositionLayers.qml">qml/GIS_AirPositionLayers.qml</file>
+        <file alias="qml/GIS_NoFlyZoneLayers.qml">qml/GIS_NoFlyZoneLayers.qml</file>
+        <file alias="qml/GIS_MapToolLayers.qml">qml/GIS_MapToolLayers.qml</file>
+        <file alias="qml/GIS_AirPointLayers.qml">qml/GIS_AirPointLayers.qml</file>
+    </qresource>
+</RCC>
